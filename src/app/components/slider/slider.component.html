@@ -1,0 +1,32 @@
+<div class="container" style="margin: 2% auto">
+    <p class="font-weight-bold" style="margin-left: 1%;font-size: 2rem;">Gallery</p>
+
+    <div
+          ng2-carouselamos
+          class="slides-wrapper"
+          [items]="items"
+          [width]="auto"
+          [$prev]="prev"
+          [$next]="next"
+          [$item]="item"
+  >
+  </div>
+
+
+  <ng-template #prev>
+    <!--<img src="assets/images/left-arrow.png" id="left" />-->
+    <!--<img src="https://cdn0.iconfinder.com/data/icons/navigation-set-arrows-part-one/32/ChevronRight-512.png" id="left" />-->
+    <i class="fa fa-chevron-left" aria-hidden="true" style="font-size: 500%;color: orange;margin-right: 0.5em"></i>
+  </ng-template>
+  <ng-template #next>
+    <!--<img src="assets/images/right-arrow.png" id="right" />-->
+    <i class="fa fa-chevron-right" aria-hidden="true" style="font-size: 500%;color: orange;margin-right: 0.5em"></i>
+  </ng-template>
+  <ng-template #item let-item let-i="index">
+
+    <div>
+      <img class="items" src="{{ item.name }}">
+    </div>
+
+  </ng-template>
+</div>

@@ -1,0 +1,55 @@
+<div class="page-header section-dark" style="background-image: url('assets/img/FBAIS/daniel-olahh.jpg')">
+  <div class="filter"></div>
+  <div class="content-center">
+    <div class="container">
+      <div class="title-brand">
+        <div class="angular-logo">
+          <img src="assets/img/FBAIS/logo.png" alt="">
+        </div>
+        <h1 class="presentation-title" style="font-size: 400%;">Welcome To <br>Fireblaze AI School</h1>
+      </div>
+
+      <h2 class="presentation-subtitle text-center">We offer Exceptional Courses with 100% job assistance</h2>
+    </div>
+  </div>
+</div>
+<div class="main">
+    <div class="container">
+        <div class="form-group">
+    <select id = "myList" (change)="onChange($event)" class="form-control col-sm-12" >
+        <option value = {{course.courseTitle}} *ngFor="let course of courses;" [ngValue]="this.cd.loadTag" [selected]="this.cd.loadTag===course.courseTitle">{{course.courseTitle}}</option>
+    </select>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 align-middle">
+                <h2 class="font-weight-bold">{{displayObj.courseTitle}}</h2>
+                <br/>
+                <p class="text-justify h5">{{displayObj.courseDescription}}</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <img src={{displayObj.courseImage}} alt={{displayObj.courseTitle}} class="img-responsive">
+            </div>
+
+        </div>
+        <div class="decorate">
+            <p class="font-weight-normal" style="margin-bottom:2%;margin-left: 1%;font-size: 2rem">Syllabus</p>
+
+            <table class="table table-bordered" *ngFor="let section of displayObj.syllabus;let i of index" style="margin: 0;padding: 0">
+                <tr class="header" >
+                    <td colspan="2" class="section-container">{{section}}</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>data</td>
+                </tr>
+                <tr>
+                    <td>data</td>
+                    <td>data</td>
+                </tr>
+
+            </table>
+    </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,30 @@
+<div class="page-header section-dark" style="background-image: url('assets/img/FBAIS/daniel-olahh.jpg')">
+  <div class="filter"></div>
+  <div class="content-center">
+    <div class="container">
+      <div class="title-brand">
+        <div class="angular-logo">
+          <img src="assets/img/FBAIS/logo.png" alt="">
+        </div>
+        <h1 class="presentation-title" style="font-size: 400%;">Welcome To <br>Fireblaze AI School</h1>
+      </div>
+
+      <h2 class="presentation-subtitle text-center">We offer Exceptional Courses with 100% job assistance</h2>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div class="container">
+      <h2 class="font-weight-bold">Video Testimonials</h2><br/>
+      <div class="row">
+      <div class="col-lg-6 col-md-12 col-sm-12" *ngFor="let link of links;let i=index">
+        <div class="wrapper" style="margin-bottom: 5%">
+        <iframe width="520" height="315" [src]="getSafeLink(link)" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

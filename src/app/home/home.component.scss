@@ -1,0 +1,34 @@
+.btn-linkedin {
+  background: #0E76A8;
+  //border-radius: 0;
+  color: #fff!important;
+  //border-width: 1px;
+  //border-style: solid;
+  //border-color: #084461;
+  outline: none!important;
+  border: 0px;
+
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+  color: #fff;
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+  background: #084461;
+  color: #fff;
+}
+.btn-footer {
+  color: #A8A8A8;
+  margin: 2%;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 43px;
+  font-size: 13px;
+  padding: 7px 30px;
+  line-height: 47px;
+}
+.btn-footer:hover {
+
+  text-decoration: none;
+  color: white;
+
+}

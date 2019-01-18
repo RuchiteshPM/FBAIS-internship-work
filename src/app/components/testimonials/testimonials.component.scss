@@ -1,0 +1,33 @@
+p{
+  text-align: justify;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:75%;
+  border: 1px solid black;
+  max-height: 320px;
+}
+@media screen and (max-width: 992px) {
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+    border: 1px solid black;
+    max-height: 320px;
+  }
+}
+@media screen and (max-width: 770px) {
+
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width:55%;
+      border: 1px solid black;
+      max-height: 320px;
+    }
+
+}

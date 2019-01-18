@@ -1,0 +1,31 @@
+*{
+  //text-align: justify;
+}
+btn{
+  display: block;
+  bottom: 0;
+  border: 5px darkblue dashed;
+
+}
+img{
+  max-height: 250px;
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+//.card{
+//  max-height: 600px;
+//}
+
+.card {
+  border:1px solid black;
+  margin: 1%;
+  margin-bottom: 50px !important;
+
+}
+.card-body{
+  padding-bottom: 0;
+
+}

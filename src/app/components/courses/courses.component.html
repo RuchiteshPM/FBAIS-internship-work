@@ -1,0 +1,10 @@
+<div class="container">
+  <p class="font-weight-bold" style="margin-left: 1%;font-size: 2rem">Courses</p>
+  <div class="row">
+    <div class="col-lg-4 col-sm-6 col-xs-12" style="margin:2% auto" *ngFor="let course of courses;let i=index">
+      <app-course [courseTitle]="course.courseTitle" [courseDescription]="course.courseDescription"
+                  [courseImage]="course.courseImage"></app-course>
+    </div>
+
+  </div>
+</div>

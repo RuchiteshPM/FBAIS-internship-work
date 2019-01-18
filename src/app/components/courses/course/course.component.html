@@ -1,0 +1,13 @@
+<div class="card h-100">
+<div class="view overlay">
+        <img class="card-img-top" style="margin: 5px auto" src={{courseImage}} alt={{courseTitle}}>
+    <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+    </a>
+</div>
+<div class="card-body d-flex flex-column">
+    <h4 class="card-title">{{courseTitle}}</h4>
+    <p class="card-text">{{courseDescription}}</p>
+    <a class="align-self-end btn btn-round btn-outline-danger" style="margin-top: auto;margin-bottom: 3%;" (click)="onNavigate(courseTitle)">Read More</a>
+</div>
+</div>

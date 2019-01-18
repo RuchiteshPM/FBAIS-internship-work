@@ -1,0 +1,44 @@
+.whatToLearn{
+  background-color: #f9f9f9;
+  border: 1px solid #dedfe0;
+  padding: 10px 15px;
+  //max-width: 800px;
+
+}
+.title {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+.items{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
+}
+.text{
+  font-size: 18px;
+  line-height: 2;
+  flex: 1 100%;
+  margin-left: 5%;
+}
+ul{
+  list-style: none;
+}
+li i{
+  color:green;
+  font-size: 18px!important;
+  margin-bottom: 3%;
+}
+.setcolumn {
+  width: 45%;
+  min-width: 200px;
+
+}
+@media screen and (max-width: 720px) {
+.setcolumn{
+  width: 100%;
+  min-width: 200px;
+}
+}
